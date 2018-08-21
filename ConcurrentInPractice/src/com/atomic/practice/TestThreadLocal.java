@@ -14,7 +14,7 @@ public class TestThreadLocal {
 		 * 实例化一个继承ThreadLocal的子类，并将父类的initialValue()方法重写
 		 * 重写原因：第一次调用ThreadLocal的get()方法时会 调用setInitialValue()方法初始化
 		 * 		   setInitialValue()方法会调用initialValue()方法。
-		 * 		   实际上第一次调用get()方法返回的是initialValue()方法返回的结果，具体细节可以查看源码。
+		 * 		   实际上第一次调用get()方法返回initialValue的是()方法返回的结果，具体细节可以查看源码。
 		 */
 		public Connection initialValue(){
 			try {

@@ -33,6 +33,7 @@ public class ThreadTest {
 
 class Person {
 	private int value;
+	private int age;
 	public synchronized int getNext() {
 		return value ++  ;
 	}
